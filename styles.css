@@ -4,16 +4,34 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
 
 main {
   max-width: 700px;
   margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1,
+header p {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
 }
 
 article {
@@ -61,4 +79,64 @@ nav a:hover {
 }
 html {
   scroll-behavior: smooth;
+}
+.escudo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.escudo-placeholder {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+header h1,
+header p {
+  margin: 5px auto;
+}
+main h2 {
+  text-align: center;
+}
+main article p,
+.historia p {
+  text-align: center;
+}
+header h1,
+header p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  width: 100%;
+}
+.historia {
+  text-align: center;
+}
+header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+#galeria h2 {
+  text-align: center;
+  background-color: orange;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
 }
